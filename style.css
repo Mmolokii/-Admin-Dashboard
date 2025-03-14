@@ -1,9 +1,42 @@
+/* General Styles */
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-  width: 35px; 
-  height: 35px; 
+body {
+  display: grid; 
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh; 
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  background-color: blue;
+  color: white; 
+  grid-row: 1 / 3; 
+  display: flex; 
+  flex-direction: column;
+  padding: 25px;
+}
+
+.sidebar ul li {
+  list-style: none;
+  display: flex; 
+  gap: 20px;
+  align-items: center;
+  margin: 15px 0; 
+  cursor: pointer;
+}
+
+.svg-icon {
+  height: 30px; 
+  width: 30px; 
+}
+
+.header-icon {
+  height: 45px; 
+  width: 45px; 
 }
