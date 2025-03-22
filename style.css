@@ -25,3 +25,40 @@ body {
   flex-direction: column; 
   gap: 20px; 
 }
+
+/* Header */
+.header {
+  grid-area: header; 
+  background-color: #fff; 
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Main Content */
+.main {
+  grid-area: main; 
+  display: grid; 
+  grid-template-columns: 2fr 1fr;
+  gap: 20px; 
+  padding: 20px; 
+  background-color: #f5f5f5; 
+}
+
+/* Projects Section */
+.projects {
+  background-color: white;
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section */
+.announcements, .trending {
+  background-color: white;
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
