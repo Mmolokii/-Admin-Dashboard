@@ -1,195 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">
-      <img class="header-icon" src="icons/view-dashboard.svg" alt="">
-      <h1>Dashboard</h1>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <img class="svg-icon" src="icons/home.svg" alt="">
-          <h2>Home</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/profile.svg" alt="">
-          <h2>Profile</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/message-reply.svg" alt="">
-          <h2>Messages</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/clock-time.svg" alt="">
-          <h2>History</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/note-multiple.svg" alt="">
-          <h2>Tasks</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/account-group.svg" alt="">
-          <h2>Communities</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/settings.svg" alt="">
-          <h2>Settings</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/help-box.svg" alt="">
-          <h2>Support</h2>
-        </li>
-        <li>
-          <img class="svg-icon" src="icons/shield-check.svg" alt="">
-          <h2>Privacy</h2>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header">
-    <div class="search-bar">
-      <img class="svg-icon profile-pic" src="icons/search.svg" alt="search icon">
-      <form action="get">
-        <input type="text" placeholder="Search">
-      </form>
-      
-      <!-- Notification bell center -->
-       <div class="notification-center">
-        <img class="svg-icon" src="icons/bell-ring.svg" alt="bell icon">
-        <img class="profile-pic" src="icons/parrot-profile.jpg" alt="parrot profile">
-        <p class="profile-name">Morgan Oakley</p>
-       </div>
+    <div class="container">
+        <header>
+            <div class="header-find">
+                <div class="explore">
+                    <img src="assets/lupa.png" alt="lupa">
+                    <input type="text">
+                </div>
+                <div class="session">
+                    <img src="assets/bell-ring.png" alt="noti">
+                    <img src="assets/profile.jpg" alt="photo">
+                    <span class="name-profile">Ragnarok</span>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="hi-icon-perfil">
+                    <img src="assets/profile.jpg" alt="foto">
+                    <h4>Hi there,</h4>
+                    <h3>Ragnarok(@HugoRagna)</h3>
+                </div>
+                <div class="header-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="logo">
+                <img src="assets/view-dashboard.png" alt="logo">
+                <h1>DashBoard</h1>
+            </div>
+            <ul>                  
+                <li class="option"><img src="assets/home.png">Home</li>
+                <li class="option"><img src="assets/card-account-details-outline.png">Profile</li>
+                <li class="option"><img src="assets/message-reply.png">Message</li>
+                <li class="option"><img src="assets/clock-time-three.png">History</li>
+                <li class="option"><img src="assets/file-document-multiple.png">Tasks</li>
+               <li class="option"><img src="assets/account-group.png">Communities</li>
+            </ul>
+            <ul>
+                <li class="option"><img src="assets/cog.png">Settings</li>
+                <li class="option"><img src="assets/help-box.png">Support</li>
+                <li class="option"><img src="assets/shield-check.png">Privacy</li>
+            </ul>
+        </nav>
+            <!-- Main Page Section -->
+        <main>
+            <div class="projects">
+                <h2>Your Projects</h2>
+                <div class="cards-projects">
+                    <div class="card">
+                        <h4>Super cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Less cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Imposible App</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Easy Easy app</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Add blocker</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Money Marker</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam eaque voluptates veritatis odit esse dignissimos tempora fugiat, tempore dolores illo quaerat nostrum voluptate id, quibusdam, sed praesentium adipisci in.</p>
+                        <div class="little-buttons">
+                            <img src="assets/eye-plus.png" alt="">
+                            <img src="assets/chat-plus-outline.png" alt="">
+                            <img src="assets/message-reply.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-       <!-- User Detials -->
-        <div class="user-details">
-          <img class="profile-pic" src="icons/parrot-profile.jpg" alt="parrot profile">
-          <p class="greeting-msg">Hi there,</p>
-          <p class="profile-name">Morgan Oakley (@morgan)</p>
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
-        </div>
-    </div>
-  </div>
-  <div class="main">
-    <!-- Your Projects -->
-     <div class="projects">
-      <h4>Your Projects</h4>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-      <div class="project">
-        <div class="colour-block"></div>
-        <div class="project-content">
-          <h5>Super Cool Project</h5>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, accusantium eum dicta ullam placeat possimus voluptatem suscipit tempore facilis. </p>
-        </div>
-        <div class="action-block">
-          <img src="icons/star-plus.svg" alt="save icon" class="action-img">
-          <img src="icons/eye-plus.svg" alt="">
-          <img src="icons/view-dashboard.svg" alt="">
-        </div>
-      </div>
-     </div>
+            <!-- Announcements & Trends -->
+            <div class="container-news">
+                <h2>Announcements</h2>
+                <div class="anuncios">
+                    <section>
+                        <article>
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi cupiditate consectetur nemo aperiam soluta eum. Distinctio asp.</p>
+                        </article>
+                        <article>
+                            <h5>Comunity Share Day</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi cupiditate consectetur nemo aperiam soluta eum. Distinct.</p>
+                        </article>
+                        <article>
+                            <h5>Update Privacy Policy</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi cupiditate consectetur nemo aperiam soluta eum. Distinctio .</p>
+                        </article>
+                    </section>
+                </div>
 
-     <!-- Announcements Section -->
-      <div class="announcements">
-        <h4>Announcements</h4>
-        <div class="announ-content">
-          <h5>Site Management</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p><br>
-        </div>
-        <div class="announ-content">
-          <h5>Community Share Day</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p><br>
-        </div>
-        <div class="announ-content">
-          <h5>Update Privacy Policy</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-      </div>
-      <!-- Trending Section -->
-      <div class="trending">
-        <div class="user">
-          <img class="user-profile" src="icons/parrot-profile.jpg" alt="">
-          <p class="user-name">@tegan</p>
-          <p class="user-message">World Peace Builder</p>
-        </div>
-        <div class="user">
-          <img class="user-profile" src="icons/parrot-profile.jpg" alt="">
-          <p class="user-name">@tegan</p>
-          <p class="user-message">World Peace Builder</p>
-        </div>
-        <div class="user">
-          <img class="user-profile" src="icons/parrot-profile.jpg" alt="">
-          <p class="user-name">@tegan</p>
-          <p class="user-message">World Peace Builder</p>
-        </div>
-      </div>
-  </div>
+                <!-- Trends Section -->
+                <div class="trending">
+                    <h2>Trending</h2>
+                <section>
+                    <div class="profile">
+                        <img src="assets/profile2.jpg" alt="perfil1">
+                        <p>@tegan</p>
+                        <span>World Peace Builder</span>
+                    </div>
+                    <div class="profile"> 
+                        <img src="assets/profile3.jpg" alt="perfil">
+                        <p>@morgan</p>
+                        <span>Super Cool Project</span>
+                    </div>
+                    <div class="profile">
+                        <img src="assets/profile4.jpg" alt="perfil">
+                        <p>@kendall</p>
+                        <p>Life Changing App</span>
+                    </div>
+                    <div class="profile">
+                        <img src="assets/profile5.jpg" alt="perfil">
+                        <p>@alex</p>
+                        <span>No Traffic Maker</span>
+                    </div>
+                </section>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
